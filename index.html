@@ -9,45 +9,50 @@
 </head>
 
 <body>
-  <div class="jumbotron">
-    <h1><b>PIG-DICE<b></h1>
-  </div>
+
+
   <div class="container">
-    <div class="row">
-      <h2>How it works:</h2>
-      <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
-      <ul>
-        <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
-        <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
-        <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
-      </ul>
-      <p>The first player to score 100 or more points wins.</p>
+    <div class="jumbotron" id="jumbo">
+      <h1><b>PIG-DICE<b></h1>
 
-      <h2>Let's Play!</h2>
-
-      <div class="col-md-6">
-        <h3><b>Player 1<b></h3>
-        <button id="player1-roll" class="btn btn-danger">Roll</button>
-        <button id="player1-hold" class="btn btn-danger">Hold</button>
-        <h3 id="die-roll-1">Dice Roll:</h3>
-        <p id="round-total-1">Round Total:</p>
-        <p id=total-score-1>Player's Score:</p>
+      <div class="row">
+    <div class="well" id="well1">
+        <h2><b>How it works:<b></h2>
+        <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
+        <ul>
+          <li><em>If the player rolls a 1, they score nothing and it becomes the next player's turn.<em></li>
+          <li><em>If the player rolls any other number, it is added to their turn total and the player's turn continues.<em></li>
+          <li><em>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.<em></li>
+        </ul>
+        <p>The first player to score 100 or more points wins.</p>
       </div>
-      <div class="col-md-6">
-        <h3><b>Player 2<b></h3>
-        <button id="player2-roll" class="btn btn-danger">Roll</button>
-        <button id="player2-hold" class="btn btn-danger">Hold</button>
-        <h3 id="die-roll-2">Dice Roll:</h3>
-        <p id="round-total-2">Round Total:</p>
-        <p id=total-score-2>Player's Score:</p>
-
-      </div>
-
-
     </div>
 
-  </div>
+        <div class="well" id="well2">
+        <h2 id="h2-play"><b>Let's Play!<b></h2>
+          <div class="row">
+        <div class="col-md-6">
 
+          <h3><b>Player 1<b></h3>
+          <button id="player1-roll" class="btn btn-danger">Roll</button>
+          <button id="player1-hold" class="btn btn-danger">Hold</button>
+          <h3 id="die-roll-1">Dice Roll:</h3>
+          <p id="round-total-1">Round Total:</p>
+          <p id=total-score-1>Player's Score:</p>
+        </div>
+        <div class="col-md-6">
+          <h3><b>Player 2<b></h3>
+          <button id="player2-roll" class="btn btn-danger">Roll</button>
+          <button id="player2-hold" class="btn btn-danger">Hold</button>
+          <h3 id="die-roll-2">Dice Roll:</h3>
+          <p id="round-total-2">Round Total:</p>
+          <p id=total-score-2>Player's Score:</p>
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
 
 
 
