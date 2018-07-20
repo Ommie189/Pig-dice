@@ -2,11 +2,10 @@
 
 // Creates a player and sets initial score to 0
 function Player(playerName) {
-  this.playerName = ;
+  this.playerName ;
   this.roll = 0;
   this.temporaryScore = 0;
   this.totalScore = 0;
-  this.turn = turn;
 }
 // Creates random number
 var randNumber = function() {
@@ -30,9 +29,28 @@ Player.prototype.hold = function() {
 }
 // Checks and notifies the player who has won
 Player.prototype.hold = function() {
-  if (this.totalScore >= 100; alert(this.playerName + "You are the winner!");
+  if (this.totalScore >= 100){
+   alert(this.playerName + "You are the winner!");
   }
 }
 
+// USER INTERFACE
+$(document).ready(function(){
+  var player1=new Player("Player 1")
+  var player2=new Player("Player 2")
 
-}
+// displays the player's roll count and temporaryScore
+$("button#player1-roll").click(function(event){
+  player1.roll = randNumber();
+  $("die-roll-1").text(player1.roll);
+  player1.rollone();
+  $("#round-total-1").text(player1.temporaryScore);
+});
+
+$("button#player2-roll").click(function(event){
+  player2.roll = randNumber();
+  $("die-roll-2").text(player2.roll);
+  player2.rollone();
+  $("#round-total-2").text(player2.temporaryScore);
+});
+});
