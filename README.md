@@ -19,7 +19,7 @@ The first player to score 100 or more points wins.
 ## Getting started
 
 -   Go to the internet.
--   Click the following link
+-   Click the following link https://ommie189.github.io/Pig-dice/
 -   The link will navigate you to where the project is.
 
 {As I used HTML and CSS to build this code, Atom or Visual Studio need to be installed by use of terminal.}
